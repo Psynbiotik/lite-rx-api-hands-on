@@ -50,7 +50,7 @@ public class Part08OtherOperations {
 
 //========================================================================================
 
-	// TODO Return the same mono passed as input parameter, expect that it will emit User.SKYLER when empty
+	// TODO Return the same mono passed as input parameter, except that it will emit User.SKYLER if it is empty
 	Mono<User> emptyToSkyler(Mono<User> mono) {
 		return mono.defaultIfEmpty(User.SKYLER); // TO BE REMOVED
 	}
